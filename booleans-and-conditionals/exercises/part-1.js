@@ -16,3 +16,5 @@ if (engineIndicatorLight === "green") {
 } else {
    console.log("engines are off");
 }
+
+// I predict "engines are off" because the value of engineIndicatorLight does not satisfy any of these conditions
