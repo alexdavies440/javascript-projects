@@ -3,6 +3,7 @@
 // Add console.log(launchReady) after this block, then run the program.
 
 //Given the fuelLevel value, should launchReady be true or false after the check?  Is the program behaving as expected?
+// Yes, because 17000 is NOT equal to or greater than 20000
 
 let launchReady = false;
 let fuelLevel = 17000;
@@ -15,7 +16,7 @@ if (fuelLevel >= 20000) {
 } else {
    console.log('WARNING: Insufficient fuel!');
    launchReady = false;
-}
+} console.log(launchReady);
 
 // if (crewStatus && computerStatus === 'green'){
 //    console.log('Crew & computer cleared.');

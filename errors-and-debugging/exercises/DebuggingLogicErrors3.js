@@ -2,8 +2,9 @@
 // Now consider the second if/else block. 
 // Add another console.log(launchReady) after this block and run the program.
 
-// Given the values for crewStatus and computerStatus, should launchReady be true or false after the check?  
-// Is the program behaving as expected?
+// Given the values for crewStatus and computerStatus, should launchReady be true or false after the check?  Yes, given the values
+// Is the program behaving as expected? No, there are other factors to consider besides crew status and whether a light is green, such as fuel level. There must also be a logic error in the computer status code if the light is green
+
 
 let launchReady = false;
 // let fuelLevel = 17000;
@@ -24,7 +25,7 @@ if (crewStatus && computerStatus === 'green'){
 } else {
    console.log('WARNING: Crew or computer not ready!');
    launchReady = false;
-}
+} console.log(launchReady);
 
 // if (launchReady) {
 //    console.log('10, 9, 8, 7, 6, 5, 4, 3, 2, 1...');
