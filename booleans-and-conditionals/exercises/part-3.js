@@ -34,11 +34,6 @@ if (fuelLevel < 1000 || engineTemperature > 3500 || engineIndicatorLight) {
  
  let commandOverride = false;
 
-/* if (commandOverride) {
-    if (fuelLevel > 5000 && engineTemperature <= 2500 && (engineIndicatorLight === !'red blinking')) {
-    } console.log("Cleared to launch!");
-} else console.log("Launch scrubbed"); */
-
 /* 6) b) Code the following if/else check:
 If fuelLevel is above 20000 AND engineIndicatorLight is NOT red blinking OR commandOverride is true print "Cleared to launch!" Else print "Launch scrubbed!" */
 
