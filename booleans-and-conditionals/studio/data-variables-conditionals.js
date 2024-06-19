@@ -26,13 +26,14 @@ let minimumFuelTemp = -300;
 
 let maximumFuelTemp = -150;
 
-let fuelLevel = "100%";
+let fuelLevel = "1000%";
 
 let weatherStatus = "clear";
 
 let preparedForLiftOff = true;
 
-
+console.log(" ")
+console.log(" ")
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
 
 if (astronautCount <= 7) {
@@ -96,5 +97,25 @@ preparedForLiftOff = true;
  if (preparedForLiftOff === true) {
     console.log("All checks clear, prepared for liftoff!")
  } else {
+    console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
     console.log("PLEASE ADDRESS THE PROBLEMS ABOVE BEFORE PROCEEDING");
+ }
+
+ console.log("----------------------------------------------------------");
+ console.log("Date: " + date);
+ console.log("Time: " + time);
+ console.log("Astronaut Count: " + astronautCount);
+ console.log("Crew Mass: " + crewMassKg + " kg");
+ console.log("Fuel Mass: " + fuelMassKg + " kg");
+ console.log("Shuttle Mass: " + shuttleMassKg + " kg");
+ console.log("Total Mass: " + totalMassKg) + " kg";
+ console.log("Fuel Temperature: " + fuelTempCelsius + " Celsius");
+ console.log("Weather Status: " + weatherStatus);
+ 
+ console.log("----------------------------------------------------------");
+
+ if (preparedForLiftOff === true) {
+    console.log("We wish you a safe flight!");
+ } else {
+    console.log("We wish you would have a safe flight, but that will not be possible until all tests pass");
  }
