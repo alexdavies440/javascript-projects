@@ -18,14 +18,17 @@ function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
   /// Part A #2: Write a ``for`` loop inside this function
   /// Code your solution for part A #2 below this comment (and above the return statement) ... ///
 
-  for (i = 0; i < numMeals; i++) {
-    let eachMeal= [];
-    for (ii = 0; ii < pantry.length; ii++) {
+  for (i = 0; i < numMeals; i++) { //outside for loop that runs everything inside it once for every number of meals
+    let eachMeal= []; //array that stores individual meals
+    for (ii = 0; ii < pantry.length; ii++) { // nested for loop that runs once for every pantry category 
       eachMeal.push(pantry[ii][i]);
     }
-    meals.push(eachMeal);
+    meals.push(eachMeal); // creates an array: meals that is populated by an array for each meal
   }
-
+/* Basically what is happening is that a for loop runs that contains a nested for loop. For every time the nested for 
+loop runs, it cycles through each pantry category, selecting one of each. Since this is inside an outer loop, the cycle
+repeats for however many times the outer loop is set to, in this case, the number of meals. In other words, for every
+meal, the nested loop picks one item from each category. */
   return meals;
 }
 
