@@ -13,7 +13,7 @@ function missionDuration(numOrbits, orbitRadius = 2000, orbitalSpeed = 28000) {
 let distance = numOrbits * (orbitCircumference(orbitRadius))
 let time = (distance/orbitalSpeed);
 time = Math.round(time * 100)/100;
-//console.log(`The mission will travel ${distance} km around the planet, and it will take ${time} hours to complete.`);
+console.log(`The mission will travel ${distance} km around the planet, and it will take ${time} hours to complete.`);
 return time;
 }
 
@@ -33,7 +33,7 @@ function selectRandomEntry(arrayInput) {
 
 
 function oxygenExpended(candidate) {
-  //candidate = selectRandomEntry(crew);
+  candidate = selectRandomEntry(crew);
   let oxygenRequired = candidate.o2Used(missionDuration(3));
 return console.log(`${candidate["name"]} will perform the spacewalk, which will last ${missionDuration(3)} hours and require ${oxygenRequired} kg of oxygen. `)
 }
@@ -86,5 +86,5 @@ let candidateA = {
  
  let crew = [candidateA,candidateC,candidateE];
 //console.log(candidateF.o2Used(7))
- console.log(oxygenExpended(candidateF));
+ console.log(oxygenExpended());
  
