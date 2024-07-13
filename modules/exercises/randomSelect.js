@@ -15,3 +15,5 @@ function testTheFunction() {
 console.log(testTheFunction(testArray));
 
 //TODO: Export the randomFromArray function.
+
+module.exports = randomFromArray;
