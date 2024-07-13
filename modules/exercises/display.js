@@ -35,6 +35,6 @@ function printTestScores(index,test,students,scores){
   return;
 }
 
-module.export = {
+module.exports = {
   printAll: printAll
 };
