@@ -1,1 +1,36 @@
 /* Start adding your styling below! */ 
+body {
+    background-color: yellow;
+    text-align: center; 
+}
+
+p {
+    color: green;
+    font-size: 21px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.center {
+    text-align: center;
+}
+
+#cool-text {
+    color: blue;
+}
+
+#orderedList {
+    color: rgb(196, 0, 196);
+    font-size: 21px;
+}
+
+#pageTitle {
+    color: red;
+}
+
+#secondHeader {
+    color:rgb(0, 244, 163);
+    background-color: rgb(192, 192, 0);
+}
