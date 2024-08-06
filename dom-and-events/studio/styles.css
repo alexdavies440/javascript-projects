@@ -23,13 +23,10 @@
 .center-block {
     text-align: center; 
     display: inline-block;
+    /* vertical-align: top; */
 }
 
 .centered {
     text-align: center;
 }
 
-#rocket {
-    /* position: absolute; */
-    
-}
