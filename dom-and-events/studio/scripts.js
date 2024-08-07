@@ -53,7 +53,7 @@ window.addEventListener("load", function() {
     
 
     up.addEventListener("click", function() {
-        if (yAxisPosition < 250000) {
+        if (yAxisPosition < 250) {
             yAxisPosition += 10;
             height += 10000;
             rocket.style.marginBottom = yAxisPosition + "px";
