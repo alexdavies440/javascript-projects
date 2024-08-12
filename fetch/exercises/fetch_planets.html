@@ -13,6 +13,8 @@
                     const destination = document.getElementById("destination");
                     let index = -1;
                     destination.addEventListener("click", function() {
+                        document.body.style.backgroundColor = "black";
+                        destination.style = "color: darkOrange; text-shadow: 0 0 5px black;"
                         if ((index + 1) % json.length === 0) {
                             index = -1;
                         }
