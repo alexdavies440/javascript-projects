@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+.recipePhotoBlock {
+  display: flex;
+  /* flex-direction: column-reverse; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 2em;
+  
+}
+

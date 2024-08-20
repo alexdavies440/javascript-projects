@@ -1,10 +1,10 @@
 import styles from './Ingredients.module.css';
 
 const RecipeIngredients = () => {
-    const ingredients = ["slice of bread", "second slice of bread", "peabut butter", "jelly", "milk for lubrication"]
+    const ingredients = ["Slice of bread", "Second slice of bread", 'Peabut butter (1-2")', 'Jelly (~1/4")', "Milk for safety"];
     return (
         <div>
-   <h3>Recipe Ingredients</h3>
+   <h3>Recipe Ingredients:</h3>
    <ul className = {styles.ingredientList}>
       <li>{ingredients[0]}</li>
       <li>{ingredients[1]}</li>

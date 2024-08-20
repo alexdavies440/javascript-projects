@@ -9,10 +9,12 @@ function App() {
   return (
     <>
       <div className="App">
-        <RecipePhoto />
-        <div>
-          <RecipeDescription />
-          <RecipeIngredients />
+        <div className="recipePhotoBlock">
+          <RecipePhoto />
+          <div className='recipeText'>
+            <RecipeDescription />
+            <RecipeIngredients />
+          </div>
         </div>
       </div>
     </>

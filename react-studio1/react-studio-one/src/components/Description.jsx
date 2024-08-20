@@ -3,7 +3,7 @@ import styles from "./Description.module.css";
 
 const RecipeAuthor = () => {
     let authorLink = "https://www.food.com/recipe/traditional-peanut-butter-and-jelly-243965#reviews";
-    let authorPhoto = "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_48,ar_1:1/v1/gk-static/gk/img/avatar/burger.png";
+    let authorPhoto = "https://i.insider.com/65aecfe9617029e90a5f3c7f?width=700";
     let authorName = "gourmetmomma";
 
     return (
@@ -24,9 +24,13 @@ class RecipeDescription extends React.Component {
             <div> 
        <div>
           <h1>Traditional Peanutbutter & Jelly for Eternal Bachelors</h1>
+          </div>
+          <RecipeAuthor />
+          <div>
+            <p>Today we are going to learn how to make a peanutbutter and jelly sandwich the old-fashioned way, from scratch. If you follow these directions carefully, you too can be the owner of a new peanutbutter and jelly sandwich! If at any point, you get lost, seek help. If at any point you choke, just keep adding milk!</p>
           <p>Put the stuff between the bread and flush it down with milk</p>
        </div>
-       <RecipeAuthor />
+       
     </div>
         );
     }
